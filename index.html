@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈晓龙的个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+	
+	 .profile-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            justify-content: center; /* 新增的行，确保水平居中 */
+        }
+
+        .profile-photo {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin: 30px 0 20px;
+        }
+
+	.profile-name {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }	
+
+	.chinese-name {
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        .position {
+            margin-bottom: 25px;
+        }
+
+        .position p {
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: #2c5282;
+            transition: color 0.2s;
+        }
+
+        .contact-links a:hover {
+            color: #1a365d;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .skill-tag {
+            background: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .experience-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .profile-photo {
+                width: 200px;
+                height: 240px;
+            }
+
+            .contact-links {
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .skill-list {
+                flex-direction: column;
+            }
+
+            .skill-tag {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-section">
+        <img src="cxl.jpg" alt="Chen Xiaolong" class="profile-photo">
+        
+        <div class="profile-info">
+            <h3 class="profile-name">陈晓龙 <span class="chinese-name">(Chen Xiaolong)</span></h3>
+            
+            <div class="position">
+                <p>VIVO AI算法研究院</p>
+                <p>AI系统策略组，AI算法工程师</p>
+                <p>中国，广东省，深圳市</p>
+            </div>
+            
+            <div class="contact-links">
+                <a href="cxl_edu@foxmail.com">📧 Email (cxl_edu@foxmail.com)</a>
+		<a href="cxl.edu@gmail.com">📧 Gmail (cxl.edu@gmail.com)</a>
+                <a href="https://github.com/CXL-edu">🔗 GitHub</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1>陈晓龙的个人简历</h1>
+
+        <div class="section">
+            <h2>技术技能</h2>
+            <div class="skill-list">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">LLM</span>
+                <span class="skill-tag">Multi-agent</span>
+                <span class="skill-tag">AI应用</span>
+                <span class="skill-tag">时序预测</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>专业能力</h2>
+            <ul>
+                <li>熟练使用机器学习和深度学习算法</li>
+                <li>熟悉RNN系列、CNN、Transformer等模型原理和源码实现</li>
+                <li>熟悉LLM微调、加速推理和部署</li>
+                <li>熟悉多智能体编排搭建流程，可快速搭建demo</li>
+                <li>对大模型等新兴技术和生产力工具持有浓厚兴趣</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>项目经历（截止24年1月）</h2>
+            <div class="experience-item">
+                <div class="experience-title">天池气象预测赛</div>
+                <div class="experience-date">2023/8 - 2023/10</div>
+                <p>两千多支队伍中复赛最终排名31。技术栈包括Xarray、Linux、Docker基础，气象大模型FourCastNet、视频预测模型SimVP等</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">电池RUL Benchmark项目负责人</div>
+                <div class="experience-date">2023/6 - 至今</div>
+                <p>GitHub: <a href="https://github.com/CXL-edu/Battery_RUL_Benchmark" target="_blank">Battery_RUL_Benchmark</a></p>
+                <p>收集整理开源数据集，复现先进时序预测算法，增加领域公开透明性和工作可复现性。</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>论文发表</h2>
+            <ul>
+                <li>2021 CCF C会议论文 "The Digital Twin Model of Chemical Production Systems in Smart Factories: A Case Study"</li>
+                <li>2023/6 "TranAD: A Deep Transformer Model for Fault Diagnosis of Lithium Batteries"</li>
+                <li>2023/10 IEEE Transactions on Industrial Informatics（在投）</li>
+                <li>2023/12 ICIT会议论文 "GRU-TemporalAttention Model with Time Series Decomposition Module for Battery Fault Diagnosis in Quadrupedal Robots"<a href="https://github.com/CXL-edu/GRU-TAE-Temporal-Decomp-for-Battery-Fault-Diagnosis" target="_blue">[code]</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>教育背景</h2>
+            <div class="education-item">
+                <div class="experience-title">中南大学（985）</div>
+                <div class="experience-date">2021.9 - 2024.6</div>
+                <p>计算机科学与技术（学硕） | 平均绩点：3.43</p>
+            </div>
+
+            <div class="education-item">
+                <div class="experience-title">海南大学（211）</div>
+                <div class="experience-date">2017.9 - 2021.6</div>
+                <p>机械电子工程 | 平均绩点：3.31（第19名/101人）</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>获奖情况</h2>
+            <ul>
+                <li>第二届湖南省研究生人工智能竞赛-三等奖</li>
+                <li>第十八届大学生科技创新创业大赛-三等奖</li>
+                <li>第18届中国研究生数学建模竞赛-三等奖</li>
+                <li>第19届中国研究生数学建模竞赛-优胜奖</li>
+                <li>海南大学优秀毕业生、优秀军训教官、优秀共青团员、三好学生</li>
+                <li>海南大学一、二、三等奖学金、单项奖学金（社会服务奖）</li>
+                <li>中南大学二等奖学金</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
